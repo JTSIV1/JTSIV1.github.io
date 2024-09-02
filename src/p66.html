@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- INSERT_HEADER -->
+    </head>
+
+    <body>
+        <div class="content">
+            
+            <!-- INSERT_NAVBAR -->
+
+            <!-- Blog Detail Start -->
+            <div class="container py-5 px-2 bg-white">
+                <div class="row px-4">
+                    <div class="col-12">
+                        <h2 class="mb-3 font-weight-bold"> Phillips 66: My Internship Experience</h2>
+                        <img class="img-fluid mb-4 mx-auto d-block" src="img/interns.jpeg" alt="Image">
+                        <div class="d-flex">
+                            <p class="mr-3 text-muted"><i class="fa fa-calendar-alt"></i> 02-Aug-2024</p>
+                            <p class="mr-3 text-muted"><i class="fa fa-folder"></i> Work Experience</p>
+                        </div>
+                        <p>As part of my 11 week internship at Phillips 66, I had countless oportunities for learning. Diving into the environment of their global corporate headquarters, I gained valuable experience working on a technical project as part of a fast paced team and company. In the program, I was placed on the Cloud Innovation team for my main personal project, but also worked with quantum computing resources as part of a group capstone project. I also had the oportunity to pursue personal development and even recieve a certification.</p>
+                        <h3 class="mb-3 font-weight-bold">Personal Project - Terraform Standard Modules</h3>
+                        <img class="w-50 float-left mr-4 mb-3" src="img/terraform.avif" alt="Image">
+                        <p>On the cloud team, I was tasked with consolodating, updating, and making available 27 different standard Terraform modules for cloud deployment on both Amazon Web Services (AWS) and Microsoft Azure. The goal of the project was to speed up the development of other teams in the company, while still maintaining high standards for efficiency and functionality for cloud resources. I performed a major overhaul of modules for AWS, rewriting the majority of the flow of variables and configurations into the module, and made them available for use in the company for the first time. For the Azure modules, I made smaller changes, but made them much easier to access and upgrade in the future.</p>
+                        <p>Additionally, I created a testing pipeline using Azure Pipelines for the standard modules I made available. This would dynamically detect the necessary tests to run in a stub pipeline, and then activate another pipeline that would simulate the process of a user deploying the standard module with a number of different parameters selected.</p>
+                        <div class="clearfix"></div>
+                        <h3 class="mb-3 font-weight-bold">Group Project - Quantum Computing for Refinery Optimization (Knapsack Problem)</h3>
+                        <img class="w-50 float-right mr-4 mb-3 ml-3" src="img/braket.png" alt="Image">
+                        <p>I worked on a team with fellow interns to develop a proof-of-concept (POC) software for the company to demonstrate how quantum computing could be used for optimization in the company. We developed a simple Linear Programming model that we then used quantum resources through AWS Braket to solve. This was meant to simulate a simplified refinery, and the possible benefits of different methods of computation on optimization. We created our solution utilizing the Quantum Approximate Optimization Algorithm (QAOA) which is a hybrid algorithm, using both quantum and conventional computing power to generate a solution. We viewed refinery optimization as a version of the Knapsack Problem, and through polynomial reduction to a Max-Cut graph problem, we were able to generate a solution with QAOA.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Detail End -->
+
+            <!-- INSERT_FOOTER -->
+        </div>
+
+        <!-- INSERT_SCRIPTS_AND_LIBRARIES -->
+    </body>
+</html>
