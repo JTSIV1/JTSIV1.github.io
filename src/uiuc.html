@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>John Speaks</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="TODO" name="keywords">
+        <meta content="The personal website and online resume of John Speaks" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Transcript</title>
+        <style>
+          body {
+            font-family: sans-serif;
+            background: #f9fafb;
+            margin: 0;
+            padding: 2rem;
+          }
+          .filter-buttons {
+            margin-bottom: 1rem;
+          }
+          .filter-buttons button {
+            margin: 0.25rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #e0e7ff;
+            color: #1e40af;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+          .filter-buttons button.active {
+            background-color: #1e40af;
+            color: white;
+          }
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+          }
+          .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 1rem;
+            transition: transform 0.2s;
+          }
+          .card:hover {
+            transform: translateY(-4px);
+          }
+          .tags {
+            margin-top: 0.5rem;
+          }
+          .tag {
+            display: inline-block;
+            background: #e5e7eb;
+            color: #374151;
+            border-radius: 6px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            margin-right: 0.25rem;
+          }
+          .link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #2563eb;
+            text-decoration: underline;
+          }
+        </style>
+      </head>
+
+    <body>
+        <div class="content"><div class="container p-0">
+            
+            <!-- INSERT_NAVBAR -->
+
+
+  <style>
+    #courseGrid {
+      max-width: 100vw;
+    }
+    .card {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+    .card h3 {
+      font-size: 1rem;
+    }
+    .tags {
+      font-size: 0.7rem;
+    }
+    .link {
+      font-size: 0.7rem;
+    }
+  </style>
+
+  
+  <h1>My Courses</h1>
+
+  <div class="filter-buttons">
+    <button onclick="resetFilters()">All</button>
+    <button id="filter-ling" onclick="toggleFilter('ling')">Linguistics</button>
+    <button id="filter-cs" onclick="toggleFilter('cs')">Computer Science</button>
+    <button id="filter-stats" onclick="toggleFilter('stats')">Stats/Math</button>
+    <button id="filter-other" onclick="toggleFilter('other')">Other</button>
+  </div>  
+
+  <div class="grid" id="courseGrid">
+    
+    <div class="card cs ling">
+        <h3>LING 490: Computational Linguistics Capstone</h3>
+        <p>Grade: A<br>Semester: Spring 2025</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2025/spring/LING/490" target="_blank">View Course</a>
+    </div>
+
+    <div class="card stats">
+        <h3>STAT 420: Methods of Applied Statistics</h3>
+        <p>Grade: A+<br>Semester: Spring 2025</p>
+        <div class="tags">
+            <span class="tag">Statistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2025/spring/STAT/420" target="_blank">View Course</a>
+    </div>
+
+    <div class="card stats cs">
+        <h3>STAT 385: Statistics Programming Methods</h3>
+        <p>Grade: A<br>Semester: Spring 2025</p>
+        <div class="tags">
+            <span class="tag">Statistics</span>
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2025/spring/STAT/385" target="_blank">View Course</a>
+    </div>
+
+    <div class="card cs">
+        <h3>CS 421: Programming Languages and Compilers</h3>
+        <p>Grade: A+<br>Semester: Spring 2025</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2025/spring/CS/421" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs">
+        <h3>CS 411: Database Systems</h3>
+        <p>Grade: A<br>Semester: Spring 2025</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2025/spring/CS/411" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs ling">
+        <h3>LING 490: Computational Sociolinguistics</h3>
+        <p>Grade: A+<br>Semester: Fall 2024</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/fall/LING/490" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs ling stats">
+        <h3>LING 406: Computational Linguistics</h3>
+        <p>Grade: A+<br>Semester: Fall 2024</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+            <span class="tag">Computer Science</span>
+            <span class="tag">Statistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/fall/LING/406" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs">
+        <h3>CS 466: Introduction to Bioinformatics</h3>
+        <p>Grade: A+<br>Semester: Fall 2024</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/fall/CS/466" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs">
+        <h3>CS 341: System Programming</h3>
+        <p>Grade: A+<br>Semester: Fall 2024</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/fall/CS/341" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card stats">
+        <h3>STAT 400: Statistics and Probability I</h3>
+        <p>Grade: A+<br>Semester: Fall 2024</p>
+        <div class="tags">
+            <span class="tag">Statistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/fall/STAT/400" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs stats ling">
+        <h3>CS 440: Artificial Intelligence</h3>
+        <p>Grade: A+<br>Semester: Spring 2024</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+            <span class="tag">Statistics</span>
+            <span class="tag">Linguistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/spring/CS/440" target="_blank">View Course</a>
+    </div>
+
+    <div class="card cs">
+        <h3>CS 374: Algorithms and Models of Computation</h3>
+        <p>Grade: A+<br>Semester: Spring 2024</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/spring/CS/374" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card ling cs">
+        <h3>LING 413: Corpus Linguistics</h3>
+        <p>Grade: A+<br>Semester: Spring 2024</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/spring/LING/413" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card ling">
+        <h3>LING 307: Elements of Semantics and Pragmatics</h3>
+        <p>Grade: A+<br>Semester: Spring 2024</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/spring/LING/307" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card other">
+        <h3>MUS 132: History of Rock Music</h3>
+        <p>Grade: A+<br>Semester: Spring 2024</p>
+        <div class="tags">
+            <span class="tag">Other</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2024/spring/MUS/132" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs">
+        <h3>CS 222: Software Design Lab</h3>
+        <p>Grade: A<br>Semester: Fall 2023</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/fall/CS/222" target="_blank">View Course</a>
+    </div>
+
+    <div class="card other">
+        <h3>DANC 100: Intro to Contemporary Dance</h3>
+        <p>Grade: A<br>Semester: Fall 2023</p>
+        <div class="tags">
+            <span class="tag">Other</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/fall/DANC/100" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs">
+        <h3>CS 233: Computer Architecture</h3>
+        <p>Grade: A<br>Semester: Fall 2023</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/fall/CS/233" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs">
+        <h3>CS 225: Data Structures and Software Principles</h3>
+        <p>Grade: A<br>Semester: Fall 2023</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/fall/CS/225" target="_blank">View Course</a>
+    </div>
+
+    <div class="card other">
+        <h3>KIN 104: Ice Skating</h3>
+        <p>Grade: A<br>Semester: Fall 2023</p>
+        <div class="tags">
+            <span class="tag">Other</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/fall/KIN/104" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs stats">
+        <h3>CS 361: Probability and Statistics for Computer Scientists</h3>
+        <p>Grade: A+<br>Semester: Fall 2023</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+            <span class="tag">Statistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/fall/CS/361" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card ling">
+        <h3>LING 301: Elements of Syntax</h3>
+        <p>Grade: A+<br>Semester: Fall 2023</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/fall/LING/301" target="_blank">View Course</a>
+    </div>
+
+    <div class="card ling">
+        <h3>LING 222: Language in Globalization</h3>
+        <p>Grade: A+<br>Semester: Spring 2023</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/spring/LING/222" target="_blank">View Course</a>
+    </div>
+
+    <div class="card stats cs">
+        <h3>MATH 257: Linear Algebra with Computational Applications</h3>
+        <p>Grade: A<br>Semester: Spring 2023</p>
+        <div class="tags">
+            <span class="tag">Math</span>
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/spring/MATH/257" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs ling">
+        <h3>LING 270: Language, Technology, and Society</h3>
+        <p>Grade: A+<br>Semester: Spring 2023</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/spring/LING/270" target="_blank">View Course</a>
+    </div>
+
+    <div class="card other">
+        <h3>MUS 169: Freshman Dorm Drum Lessons</h3>
+        <p>Grade: Pass<br>Semester: Spring 2023</p>
+        <div class="tags">
+            <span class="tag">Other</span>
+        </div>
+    </div>
+    
+    <div class="card cs">
+        <h3>CS 128: Intro to Computer Science II</h3>
+        <p>Grade: A<br>Semester: Spring 2023</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/spring/CS/128" target="_blank">View Course</a>
+    </div>
+    
+    <div class="card cs">
+        <h3>CS 173: Discrete Structures</h3>
+        <p>Grade: A<br>Semester: Spring 2023</p>
+        <div class="tags">
+            <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2023/spring/CS/173" target="_blank">View Course</a>
+    </div>
+
+    <div class="card ling">
+        <h3>LING 100: Intro to Language Science</h3>
+        <p>Grade: A<br>Semester: Fall 2022</p>
+        <div class="tags">
+            <span class="tag">Linguistics</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2022/fall/LING/100" target="_blank">View Course</a>
+    </div>
+
+    <div class="card cs">
+        <h3>CS 124: Intro to Computer Science I</h3>
+        <p>Grade: A<br>Semester: Fall 2022</p>
+        <div class="tags">
+          <span class="tag">Computer Science</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2022/fall/CS/124" target="_blank">View Course</a>
+    </div>
+
+    <div class="card other">
+        <h3>UP 101: Planning of Cities and Regions</h3>
+        <p>Grade: A<br>Semester: Fall 2022</p>
+        <div class="tags">
+          <span class="tag">Other</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2022/fall/UP/100" target="_blank">View Course</a>
+    </div>
+
+    <div class="card stats">
+        <h3>MATH 241: Calculus III</h3>
+        <p>Grade: A+<br>Semester: Fall 2022</p>
+        <div class="tags">
+          <span class="tag">Math</span>
+        </div>
+        <a class="link" href="https://courses.illinois.edu/schedule/2022/fall/MATH/241" target="_blank">View Course</a>
+    </div>
+
+    <div class="card other">
+      <h3>Hort 105: Vegetable Gardening</h3>
+      <p>Grade: A+<br>Semester: Fall 2022</p>
+      <div class="tags">
+        <span class="tag">Other</span>
+      </div>
+      <a class="link" href="https://courses.illinois.edu/schedule/2022/fall/HORT/105" target="_blank">View Course</a>
+    </div>
+    <!-- Add more cards as needed -->
+
+  </div>
+
+  <script>
+    const selectedFilters = new Set();
+  
+    function updateCardVisibility() {
+      const cards = document.querySelectorAll('.card');
+  
+      cards.forEach(card => {
+        const cardTags = card.className.split(' ');
+        // Card is visible if it includes ALL selected filters
+        const isVisible =
+          selectedFilters.size === 0 ||
+          Array.from(selectedFilters).every(filter => cardTags.includes(filter));
+  
+        card.style.display = isVisible ? 'block' : 'none';
+      });
+    }
+  
+    function toggleFilter(filter) {
+      const button = document.getElementById(`filter-${filter}`);
+      if (selectedFilters.has(filter)) {
+        selectedFilters.delete(filter);
+        button.classList.remove('active');
+      } else {
+        selectedFilters.add(filter);
+        button.classList.add('active');
+      }
+      updateCardVisibility();
+    } 
+  
+
+    function resetFilters() {
+      selectedFilters.clear();
+      document.querySelectorAll('.filter-buttons button').forEach(btn => btn.classList.remove('active'));
+      updateCardVisibility();
+    }
+  </script>
+  
+  
+
+
+  
+
+
+            
+            <!-- INSERT_FOOTER -->
+        </div></div>  
+
+        <!-- INSERT_SCRIPTS_AND_LIBRARIES -->
+    </body>
+</html>
