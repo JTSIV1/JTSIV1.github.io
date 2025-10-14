@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>John Speaks</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="TODO" name="keywords">
+        <meta content="The personal website and online resume of John Speaks" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Transcript</title>
+        <style>
+          body {
+            font-family: sans-serif;
+            background: #f9fafb;
+            margin: 0;
+            padding: 2rem;
+          }
+          .filter-buttons {
+            margin-bottom: 1rem;
+          }
+          .filter-buttons button {
+            margin: 0.25rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #e0e7ff;
+            color: #1e40af;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+          .filter-buttons button.active {
+            background-color: #1e40af;
+            color: white;
+          }
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+          }
+          .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 1rem;
+            transition: transform 0.2s;
+          }
+          .card:hover {
+            transform: translateY(-4px);
+          }
+          .tags {
+            margin-top: 0.5rem;
+          }
+          .tag {
+            display: inline-block;
+            background: #e5e7eb;
+            color: #374151;
+            border-radius: 6px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            margin-right: 0.25rem;
+          }
+          .link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #2563eb;
+            text-decoration: underline;
+          }
+        </style>
+      </head>
+
+    <body>
+        <div class="content"><div class="container p-0">
+            
+            <div class="container p-0">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="resume.html" class="nav-item nav-link">Resume</a>
+                            <a href="education.html" class="nav-item nav-link">Education</a>
+                            <a href="work.html" class="nav-item nav-link">Work Experience</a>
+                            <a href="leadership.html" class="nav-item nav-link">Leadership</a>
+                            <a href="projects.html" class="nav-item nav-link">Research</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+  <style>
+    #courseGrid {
+      max-width: 100vw;
+    }
+    .card {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+    .card h3 {
+      font-size: 1rem;
+    }
+    .tags {
+      font-size: 0.7rem;
+    }
+    .link {
+      font-size: 0.7rem;
+    }
+  </style>
+
+  <div class="container py-5 px-2 bg-white">
+    <div class="row px-4">
+      <div class="col-12">
+        <h2 class="mb-3 font-weight-bold">Carnegie Mellon University</h2>
+        <p class="mb-3">Master of Information Technology Strategy <a href="https://www.cmu.edu/cmist/academics/graduate-programs/mits/index.html">(More info)</a></p>
+        <p class="mb-3">Graduating Summer 2026</p>
+        <h4 class="mb-4 text-muted">My Courses</h4>
+        <!-- <div class="filter-buttons mb-4">
+          <button onclick="resetFilters()">All</button>
+          <button id="filter-ling" onclick="toggleFilter('ling')">Linguistics</button>
+          <button id="filter-cs" onclick="toggleFilter('cs')">Computer Science</button>
+          <button id="filter-stats" onclick="toggleFilter('stats')">Stats/Math</button>
+          <button id="filter-other" onclick="toggleFilter('other')">Other</button>
+        </div> -->
+        <div class="grid" id="courseGrid">
+          <div class="card cs ling">
+            <h3>10-601: Introduction to Machine Learning</h3>
+            <p>Grade: In Progress<br>Semester: Fall 2025</p>
+            <div class="tags">
+                <span class="tag">Computer Science</span>
+                <span class="tag">Statistics</span>
+            </div>
+            <a class="link" href="https://www.cs.cmu.edu/~mgormley/courses/10601/" target="_blank">View Course</a>
+        </div>
+
+          <div class="card cs ling">
+            <h3>17-645: Machine Learning in Production</h3>
+            <p>Grade: In Progress<br>Semester: Fall 2025</p>
+            <div class="tags">
+                <span class="tag">Computer Science</span>
+                <span class="tag">ML Ops</span>
+            </div>
+            <a class="link" href="https://mlip-cmu.github.io/f2025/" target="_blank">View Course</a>
+        </div>
+
+          <div class="card cs ling">
+            <h3>17-631: Information, Security, Privacy & Policy</h3>
+            <p>Grade: In Progress<br>Semester: Fall 2025</p>
+            <div class="tags">
+                <span class="tag">Computer Science</span>
+            </div>
+            <a class="link" href="https://privacy.cs.cmu.edu/masters/plan/courses/informationsecurity-privacy-and-policy.html" target="_blank">View Course</a>
+        </div>
+
+          <div class="card cs ling">
+            <h3>84-671: International Governance of Artificial Intelligence</h3>
+            <p>Grade: In Progress<br>Semester: Fall 2025</p>
+            <div class="tags">
+                <span class="tag">Governance</span>
+                <span class="tag">Computer Science</span>
+            </div>
+            <a class="link" href="https://www.cmu.edu/cmist/academics/courses/graduate-courses/84671.html" target="_blank">View Course</a>
+        </div>
+
+          <div class="card cs ling">
+            <h3>84-791: Policy Seminar I</h3>
+            <p>Grade: In Progress<br>Semester: Fall 2025</p>
+            <div class="tags">
+                <span class="tag">Strategy</span>
+                <span class="tag">Computer Science</span>
+                <span class="tag">Governance</span>
+            </div>
+            <a class="link" href="https://www.cmu.edu/cmist/academics/courses/graduate-courses/84791.html" target="_blank">View Course</a>
+        </div>
+        </div>
+    
+        
+        <!-- Add more cards as needed -->
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    const selectedFilters = new Set();
+  
+    function updateCardVisibility() {
+      const cards = document.querySelectorAll('.card');
+  
+      cards.forEach(card => {
+        const cardTags = card.className.split(' ');
+        // Card is visible if it includes ALL selected filters
+        const isVisible =
+          selectedFilters.size === 0 ||
+          Array.from(selectedFilters).every(filter => cardTags.includes(filter));
+  
+        card.style.display = isVisible ? 'block' : 'none';
+      });
+    }
+  
+    function toggleFilter(filter) {
+      const button = document.getElementById(`filter-${filter}`);
+      if (selectedFilters.has(filter)) {
+        selectedFilters.delete(filter);
+        button.classList.remove('active');
+      } else {
+        selectedFilters.add(filter);
+        button.classList.add('active');
+      }
+      updateCardVisibility();
+    } 
+  
+
+    function resetFilters() {
+      selectedFilters.clear();
+      document.querySelectorAll('.filter-buttons button').forEach(btn => btn.classList.remove('active'));
+      updateCardVisibility();
+    }
+  </script>
+  
+  
+
+
+  
+
+
+            
+            <div class="container py-4 bg-secondary text-center">
+                <p class="m-0 text-white">
+                    JohnSpeaks.com &copy; Last Updated October 2025
+                </p>
+            </div>
+        </div></div>  
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

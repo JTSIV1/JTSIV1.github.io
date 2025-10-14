@@ -2,6 +2,26 @@
 <html lang="en">
     <head>
         <!-- INSERT_HEADER -->
+         <style>
+          .filter-buttons {
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+          .filter-buttons button {
+            margin: 0.25rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #e0e7ff;
+            color: #1e40af;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+          .filter-buttons button.active {
+            background-color: #1e40af;
+            color: white;
+          }
+         </style>
     </head>
 
     <body>
@@ -10,14 +30,34 @@
             <!-- INSERT_NAVBAR -->
             
             <!-- Resume -->
-            <div class="container text-center">
-                <embed src="resume.pdf#&navpanes=0&scrollbar=0" class="pdf" style="width: 100%; max-width: 850px; height: 1150px; margin: 0 auto;" />
+            <div class="filter-buttons mb-4">
+                <button onclick="changePdf('1')" class="mb-2">1 page</button>
+                <button onclick="changePdf('2')" class="mb-2 active">2 page</button>
             </div>
+            <div class="container text-center">
+                <embed src="JOHN_SPEAKS_RESUME_2P.pdf#&navpanes=0&scrollbar=0" class="pdf" style="width: 100%; max-width: 850px; height: 1150px; margin: 0 auto;" />
+            </div>
+            
             
             
             <!-- INSERT_FOOTER -->
         </div>
 
+        <script>
+            function changePdf(pageNumber) {
+                var embed = document.querySelector('embed');
+                embed.src = "JOHN_SPEAKS_RESUME_" + pageNumber + "P.pdf#&navpanes=0&scrollbar=0";
+
+                var buttons = document.querySelectorAll('.filter-buttons button');
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
+
+                // Add 'active' class to the clicked button
+                var clickedButton = event.target; // 'event' is a global variable for the click event
+                clickedButton.classList.add('active');
+            }
+        </script>
         <!-- INSERT_SCRIPTS_AND_LIBRARIES -->
     </body>
 </html>
