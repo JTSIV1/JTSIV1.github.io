@@ -69,7 +69,7 @@
                 <button onclick="changePdf('2')" class="mb-2 active">2 page</button>
             </div>
             <div class="container text-center">
-                <embed src="JOHN_SPEAKS_RESUME_2P.pdf#&navpanes=0&scrollbar=0" class="pdf" style="width: 100%; max-width: 850px; height: 1150px; margin: 0 auto;" />
+                <iframe src="JOHN_SPEAKS_RESUME_2P.pdf#navpanes=0&scrollbar=0" class="pdf" style="width: 100%; max-width: 850px; height: 1150px; margin: 0 auto;" frameborder="0"></iframe>
             </div>
             
             
@@ -83,7 +83,7 @@
 
         <script>
             function changePdf(pageNumber) {
-                var embed = document.querySelector('embed');
+                var embed = document.querySelector('iframe');
                 embed.src = "JOHN_SPEAKS_RESUME_" + pageNumber + "P.pdf#&navpanes=0&scrollbar=0";
 
                 var buttons = document.querySelectorAll('.filter-buttons button');
